@@ -1,4 +1,6 @@
-package basic.human5;
+package ex.human5;
+
+import basic.human5.IfSayHello;
 
 //デンマーク人クラス
 class Danish implements IfSayHello {
