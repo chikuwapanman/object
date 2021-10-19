@@ -10,8 +10,7 @@ class Student {
     private int math;//数学
     private int eng;//英語
 
-    //コンストラクタ
-    public Student(String name, String gender, int jap, int math, int eng) {
+    public Student(String name, Gender gender, int jap, int math, int eng) {
         this.name = name;
         this.gender = gender;
         this.jap = jap;
@@ -19,11 +18,12 @@ class Student {
         this.eng = eng;
     }
 
+
     public String getName() {
         return name;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
@@ -51,7 +51,7 @@ class Student {
     @Override
     public String toString() {
         return String.format("%s %s %d %d %d %d %.2f",
-        name,gender,jap,math,eng,sum(),ave());
+        name,gender.getJpName(),jap,math,eng,sum(),ave());
     }
 }
 
